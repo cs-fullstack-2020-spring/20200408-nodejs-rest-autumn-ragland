@@ -31,7 +31,7 @@ app.delete('/student/:id', (req,res) => {
     res.send(jsonStudent);
 });
 // CREATE STUDENT
-app.post('/student/:id', (req,res) => {
+app.post('/student', (req,res) => {
     req.body.status = "Created";
     // add student to array
     studentArray.push(req.body);
